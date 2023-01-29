@@ -72,6 +72,7 @@
             this.tbPn.Name = "tbPn";
             this.tbPn.Size = new System.Drawing.Size(68, 20);
             this.tbPn.TabIndex = 3;
+            this.tbPn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbPn_KeyDown);
             this.tbPn.Leave += new System.EventHandler(this.TbPn_Leave);
             // 
             // tbQty
@@ -81,6 +82,7 @@
             this.tbQty.Name = "tbQty";
             this.tbQty.Size = new System.Drawing.Size(68, 20);
             this.tbQty.TabIndex = 4;
+            this.tbQty.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TbQty_KeyDown);
             // 
             // tbUom
             // 
@@ -141,7 +143,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(368, 16);
+            this.btnCheck.Location = new System.Drawing.Point(376, 18);
             this.btnCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(54, 19);

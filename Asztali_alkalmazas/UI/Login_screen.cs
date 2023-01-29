@@ -34,7 +34,6 @@ namespace Asztali_alkalmazas.UI
                 conn = new MySqlConnection();
                 conn.ConnectionString = connstring;
                 conn.Open();
-                MessageBox.Show("Connection successful");
             }
             catch (MySqlException ex)
             {
@@ -75,7 +74,6 @@ namespace Asztali_alkalmazas.UI
                 int torolt = Convert.ToInt32(dr["Deleted"]);// Csóbor S. Erik csinálta
                 if (torolt == 0 && password == dr["Password"].ToString())// Csóbor S. Erik csinálta
                 {
-                    MessageBox.Show("Betudott Lépni");
                     wrtieLogin(user, dr["Permission"].ToString());
                     ControlPanel1 CP1 = new ControlPanel1();// Csóbor S. Erik csinálta
                     CP1.Show();// Csóbor S. Erik csinálta
@@ -130,7 +128,7 @@ namespace Asztali_alkalmazas.UI
 
         private void Login_screen_Load(object sender, EventArgs e)
         {
-
+            Username_Textbox.Focus();
         }
     }
 }

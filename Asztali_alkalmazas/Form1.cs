@@ -32,73 +32,7 @@ namespace WindowsFormsApp1
 
         }
 
-        class inc
-        {
-            public string datum;
-            public string dn;
-            public string sup;
-            public int pn;
-            public double qty;
-            public string uom;
 
-            public inc(string datum, string dn, string sup, int pn, double qty, string uom)
-            {
-                setDatum(datum);
-                setdn(dn);
-                setSup(sup);
-                setPn(pn);
-                setQty(qty);
-                setUom(uom);
-            }
-
-            public inc()
-            {
-            }
-
-            public void setDatum(string datum)
-            {
-                if (datum != "")
-                {
-                    this.datum = datum;
-                }
-            }
-            public void setdn(string dn)
-            {
-                if (dn != "")
-                {
-                    this.dn = dn;
-                }
-            }
-            public void setSup(string sup)
-            {
-                if (sup != "")
-                {
-                    this.sup = sup;
-                }
-            }
-            public void setPn(int pn)
-            {
-                if (pn != 0)
-                {
-                    this.pn = pn;
-                }
-            }
-            public void setQty(double qty)
-            {
-                if (qty != 0)
-                {
-                    this.qty = qty;
-                }
-            }
-            public void setUom(string uom)
-            {
-                if (uom != "")
-                {
-                    this.uom = uom;
-                }
-            }
-        }
-        List<inc> incItems = new List<inc>();
 
         private void FrmInc_Load(object sender, EventArgs e)
         {
@@ -184,8 +118,6 @@ namespace WindowsFormsApp1
         private void BtnBook_Click(object sender, EventArgs e)
         {
             
-            int rowsC;
-            rowsC = ItemsDGV.Rows.Count;
             MySqlConnection conn;
             string connstring = "SERVER = mysql.nethely.hu;PORT=3306; DATABASE=vizga;uid=vizga;PASSWORD=Janika208";
             conn = new MySqlConnection(connstring);
@@ -220,7 +152,7 @@ namespace WindowsFormsApp1
                 }
                 
             }
-            
+            MessageBox.Show("A könyvelés sikeres volt!");
         }
 
         private void TbSup_KeyDown(object sender, KeyEventArgs e)
@@ -233,37 +165,49 @@ namespace WindowsFormsApp1
 
         private void TbPn_Leave(object sender, EventArgs e)
         {
+            MySqlConnection conn;
+            string sqlStr = "";
+            string connstring = "SERVER = mysql.nethely.hu;PORT=3306; DATABASE=vizga;uid=vizga;PASSWORD=Janika208";
+            conn = new MySqlConnection(connstring);
             int p;
-            
             try
             {
 
                 if (tbPn.Text != "")
                 {
-                    MySqlConnection conn;
                     p = Convert.ToInt32(tbPn.Text);
-                    string sqlStr = "";
-                    string connstring = "SERVER = mysql.nethely.hu;PORT=3306; DATABASE=vizga;uid=vizga;PASSWORD=Janika208";
-                    conn = new MySqlConnection(connstring);
                     conn.Open();
                     sqlStr = "select PartNumber from vizga.Material where PartNumber = '" + p + "'";
                     MySqlCommand cmd = new MySqlCommand(sqlStr, conn);
                     object van = cmd.ExecuteScalar();
-
-                    conn.Close();
-
                     if (van == null)
                     {
                         MessageBox.Show("Nem létező anyagszám!");
                         tbPn.Clear();
                         tbPn.Focus();
                     }
-                    
+                    else {
+                        sqlStr = "select Measure from vizga.Material where PartNumber = '" + p + "'";
+                        cmd = new MySqlCommand(sqlStr, conn);
+                        string m = cmd.ExecuteScalar().ToString();
+                        tbUom.Text = m;
+                        tbUom.Enabled = false;
+                        tbQty.Focus();
+                    }
+                    conn.Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void TbQty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnOk.PerformClick();
             }
         }
     }

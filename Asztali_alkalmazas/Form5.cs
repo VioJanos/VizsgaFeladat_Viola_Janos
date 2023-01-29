@@ -69,6 +69,9 @@ namespace Asztali_alkalmazas
                 object voltPcs = cmd.ExecuteScalar();
                 int volt = Convert.ToInt32(voltPcs.ToString());
                 lesz = volt - pcs;
+                if (lesz<0) {
+                    MessageBox.Show("Negatív készletet generálsz, lépj kapcsolatba a készletelemzővel!");
+                }
                 sqlStr = "update WarehouseStock set Pcs = '"+lesz+ "' where Location = '" + cbHonnan.Text + "' and PartNumber = '"+ tbPn.Text + "'";
                 cmd = new MySqlCommand(sqlStr, conn);
                 cmd.ExecuteNonQuery();
@@ -110,6 +113,11 @@ namespace Asztali_alkalmazas
                 tbPcs.Clear();
                 tbPcs.Focus();
             }
+        }
+
+        private void FrmBook_Load(object sender, EventArgs e)
+        {
+            tbPn.Focus();
         }
     }
 }

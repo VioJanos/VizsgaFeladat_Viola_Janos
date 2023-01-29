@@ -48,9 +48,10 @@
             "21",
             "31",
             "41"});
-            this.cbHonnan.Location = new System.Drawing.Point(120, 120);
+            this.cbHonnan.Location = new System.Drawing.Point(180, 185);
+            this.cbHonnan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbHonnan.Name = "cbHonnan";
-            this.cbHonnan.Size = new System.Drawing.Size(121, 21);
+            this.cbHonnan.Size = new System.Drawing.Size(180, 28);
             this.cbHonnan.TabIndex = 2;
             // 
             // cbHova
@@ -61,52 +62,58 @@
             "21",
             "31",
             "41"});
-            this.cbHova.Location = new System.Drawing.Point(120, 167);
+            this.cbHova.Location = new System.Drawing.Point(180, 257);
+            this.cbHova.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbHova.Name = "cbHova";
-            this.cbHova.Size = new System.Drawing.Size(121, 21);
+            this.cbHova.Size = new System.Drawing.Size(180, 28);
             this.cbHova.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 123);
+            this.label1.Location = new System.Drawing.Point(80, 189);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(70, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Honnan:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 170);
+            this.label2.Location = new System.Drawing.Point(80, 262);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hova:";
             // 
             // tbPn
             // 
-            this.tbPn.Location = new System.Drawing.Point(120, 38);
+            this.tbPn.Location = new System.Drawing.Point(180, 58);
+            this.tbPn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPn.Name = "tbPn";
             this.tbPn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbPn.Size = new System.Drawing.Size(100, 20);
+            this.tbPn.Size = new System.Drawing.Size(148, 26);
             this.tbPn.TabIndex = 0;
             this.tbPn.Leave += new System.EventHandler(this.TbPn_Leave);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 41);
+            this.label3.Location = new System.Drawing.Point(80, 63);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(96, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Anyagszám:";
             // 
             // btnMentes
             // 
-            this.btnMentes.Location = new System.Drawing.Point(120, 217);
+            this.btnMentes.Location = new System.Drawing.Point(180, 334);
+            this.btnMentes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMentes.Name = "btnMentes";
-            this.btnMentes.Size = new System.Drawing.Size(75, 23);
+            this.btnMentes.Size = new System.Drawing.Size(112, 35);
             this.btnMentes.TabIndex = 4;
             this.btnMentes.Text = "Mentés";
             this.btnMentes.UseVisualStyleBackColor = true;
@@ -114,26 +121,28 @@
             // 
             // tbPcs
             // 
-            this.tbPcs.Location = new System.Drawing.Point(120, 81);
+            this.tbPcs.Location = new System.Drawing.Point(180, 125);
+            this.tbPcs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbPcs.Name = "tbPcs";
-            this.tbPcs.Size = new System.Drawing.Size(100, 20);
+            this.tbPcs.Size = new System.Drawing.Size(148, 26);
             this.tbPcs.TabIndex = 1;
             this.tbPcs.Leave += new System.EventHandler(this.TbPcs_Leave);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(50, 84);
+            this.label4.Location = new System.Drawing.Point(75, 129);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Daraszám:";
             // 
             // frmBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 263);
+            this.ClientSize = new System.Drawing.Size(465, 405);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbPcs);
             this.Controls.Add(this.btnMentes);
@@ -143,8 +152,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbHova);
             this.Controls.Add(this.cbHonnan);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmBook";
             this.Text = "Készletkönyvelés";
+            this.Load += new System.EventHandler(this.FrmBook_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
