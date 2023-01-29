@@ -71,7 +71,11 @@
             this.tbPn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbPn.Name = "tbPn";
             this.tbPn.Size = new System.Drawing.Size(68, 20);
+<<<<<<< Updated upstream
             this.tbPn.TabIndex = 3;
+=======
+            this.tbPn.TabIndex = 3;            
+>>>>>>> Stashed changes
             this.tbPn.Leave += new System.EventHandler(this.TbPn_Leave);
             // 
             // tbQty
