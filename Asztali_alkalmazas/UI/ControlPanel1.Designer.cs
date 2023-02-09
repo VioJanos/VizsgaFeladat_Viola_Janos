@@ -48,6 +48,7 @@
             this.kijelentkezBT = new System.Windows.Forms.Button();
             this.userProfilePic = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSale = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.btnInc = new System.Windows.Forms.Button();
             this.btn_NewProd = new System.Windows.Forms.Button();
@@ -55,7 +56,7 @@
             this.adminBT = new System.Windows.Forms.Button();
             this.mainBT = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnSale = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // panel3
             // 
+            this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.adminLL);
@@ -75,9 +77,9 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.ImeMode = System.Windows.Forms.ImeMode.Katakana;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(203, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1654, 100);
+            this.panel3.Size = new System.Drawing.Size(1451, 84);
             this.panel3.TabIndex = 5;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
@@ -88,10 +90,10 @@
             this.panel4.Controls.Add(this.maxBT);
             this.panel4.Controls.Add(this.closeBT);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1444, 0);
+            this.panel4.Location = new System.Drawing.Point(1241, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(210, 100);
+            this.panel4.Size = new System.Drawing.Size(210, 84);
             this.panel4.TabIndex = 15;
             // 
             // minBT
@@ -298,6 +300,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.btnSale);
@@ -310,10 +313,27 @@
             this.panel1.Controls.Add(this.btNewSup);
             this.panel1.Controls.Add(this.adminBT);
             this.panel1.Controls.Add(this.mainBT);
-            this.panel1.Location = new System.Drawing.Point(0, 100);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 848);
+            this.panel1.Size = new System.Drawing.Size(203, 881);
             this.panel1.TabIndex = 4;
+            // 
+            // btnSale
+            // 
+            this.btnSale.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnSale.FlatAppearance.BorderSize = 0;
+            this.btnSale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Bisque;
+            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnSale.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnSale.Location = new System.Drawing.Point(3, 525);
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Size = new System.Drawing.Size(194, 30);
+            this.btnSale.TabIndex = 8;
+            this.btnSale.Text = "Eladás";
+            this.btnSale.UseVisualStyleBackColor = false;
+            this.btnSale.Click += new System.EventHandler(this.BtnSale_Click);
             // 
             // btnBook
             // 
@@ -414,28 +434,27 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnSale
+            // panel5
             // 
-            this.btnSale.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnSale.FlatAppearance.BorderSize = 0;
-            this.btnSale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Bisque;
-            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnSale.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSale.Location = new System.Drawing.Point(3, 525);
-            this.btnSale.Name = "btnSale";
-            this.btnSale.Size = new System.Drawing.Size(194, 30);
-            this.btnSale.TabIndex = 8;
-            this.btnSale.Text = "Eladás";
-            this.btnSale.UseVisualStyleBackColor = false;
-            this.btnSale.Click += new System.EventHandler(this.BtnSale_Click);
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel5.Location = new System.Drawing.Point(205, 87);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1443, 788);
+            this.panel5.TabIndex = 6;
             // 
             // ControlPanel1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1654, 881);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ControlPanel1";
             this.Text = "ControlPanel";
             this.Load += new System.EventHandler(this.ControlPanel1_Load);
@@ -446,6 +465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userProfilePic)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -479,5 +499,6 @@
         private System.Windows.Forms.Button btnInc;
         private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Button btnSale;
+        private System.Windows.Forms.Panel panel5;
     }
 }

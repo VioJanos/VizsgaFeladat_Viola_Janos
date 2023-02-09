@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.adminOperationGB = new System.Windows.Forms.GroupBox();
             this.dataImportBT = new System.Windows.Forms.Button();
-            this.dataExportBT = new System.Windows.Forms.Button();
             this.deleteUserBT = new System.Windows.Forms.Button();
             this.editUserBT = new System.Windows.Forms.Button();
             this.addNewUserBT = new System.Windows.Forms.Button();
@@ -111,8 +110,8 @@
             // 
             // adminOperationGB
             // 
+            this.adminOperationGB.Controls.Add(this.editUserGB);
             this.adminOperationGB.Controls.Add(this.dataImportBT);
-            this.adminOperationGB.Controls.Add(this.dataExportBT);
             this.adminOperationGB.Controls.Add(this.deleteUserBT);
             this.adminOperationGB.Controls.Add(this.editUserBT);
             this.adminOperationGB.Controls.Add(this.addNewUserBT);
@@ -130,25 +129,12 @@
             this.dataImportBT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
             this.dataImportBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dataImportBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataImportBT.Location = new System.Drawing.Point(3, 611);
+            this.dataImportBT.Location = new System.Drawing.Point(3, 523);
             this.dataImportBT.Name = "dataImportBT";
             this.dataImportBT.Size = new System.Drawing.Size(580, 62);
             this.dataImportBT.TabIndex = 4;
             this.dataImportBT.Text = "Adatbázis importálása";
             this.dataImportBT.UseVisualStyleBackColor = true;
-            // 
-            // dataExportBT
-            // 
-            this.dataExportBT.FlatAppearance.BorderSize = 0;
-            this.dataExportBT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.dataExportBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataExportBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataExportBT.Location = new System.Drawing.Point(3, 684);
-            this.dataExportBT.Name = "dataExportBT";
-            this.dataExportBT.Size = new System.Drawing.Size(580, 62);
-            this.dataExportBT.TabIndex = 3;
-            this.dataExportBT.Text = "Adatbázis exportálása";
-            this.dataExportBT.UseVisualStyleBackColor = true;
             // 
             // deleteUserBT
             // 
@@ -254,7 +240,7 @@
             this.editUserGB.Controls.Add(this.getVezeteknevTB);
             this.editUserGB.Controls.Add(this.panel5);
             this.editUserGB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUserGB.Location = new System.Drawing.Point(53, 70);
+            this.editUserGB.Location = new System.Drawing.Point(47, 0);
             this.editUserGB.Name = "editUserGB";
             this.editUserGB.Size = new System.Drawing.Size(586, 751);
             this.editUserGB.TabIndex = 65;
@@ -291,7 +277,7 @@
             this.getIsDeletedNoRB.AutoSize = true;
             this.getIsDeletedNoRB.Location = new System.Drawing.Point(171, 21);
             this.getIsDeletedNoRB.Name = "getIsDeletedNoRB";
-            this.getIsDeletedNoRB.Size = new System.Drawing.Size(55, 20);
+            this.getIsDeletedNoRB.Size = new System.Drawing.Size(54, 20);
             this.getIsDeletedNoRB.TabIndex = 1;
             this.getIsDeletedNoRB.Text = "Nem";
             this.getIsDeletedNoRB.UseVisualStyleBackColor = true;
@@ -301,7 +287,7 @@
             this.getIsDeletedYesRB.AutoSize = true;
             this.getIsDeletedYesRB.Location = new System.Drawing.Point(74, 21);
             this.getIsDeletedYesRB.Name = "getIsDeletedYesRB";
-            this.getIsDeletedYesRB.Size = new System.Drawing.Size(52, 20);
+            this.getIsDeletedYesRB.Size = new System.Drawing.Size(51, 20);
             this.getIsDeletedYesRB.TabIndex = 0;
             this.getIsDeletedYesRB.Text = "Igen";
             this.getIsDeletedYesRB.UseVisualStyleBackColor = true;
@@ -557,7 +543,7 @@
             this.isDeletedNoRB.AutoSize = true;
             this.isDeletedNoRB.Location = new System.Drawing.Point(171, 21);
             this.isDeletedNoRB.Name = "isDeletedNoRB";
-            this.isDeletedNoRB.Size = new System.Drawing.Size(55, 20);
+            this.isDeletedNoRB.Size = new System.Drawing.Size(54, 20);
             this.isDeletedNoRB.TabIndex = 1;
             this.isDeletedNoRB.Text = "Nem";
             this.isDeletedNoRB.UseVisualStyleBackColor = true;
@@ -567,7 +553,7 @@
             this.isDeletedYesRB.AutoSize = true;
             this.isDeletedYesRB.Location = new System.Drawing.Point(74, 21);
             this.isDeletedYesRB.Name = "isDeletedYesRB";
-            this.isDeletedYesRB.Size = new System.Drawing.Size(52, 20);
+            this.isDeletedYesRB.Size = new System.Drawing.Size(51, 20);
             this.isDeletedYesRB.TabIndex = 0;
             this.isDeletedYesRB.Text = "Igen";
             this.isDeletedYesRB.UseVisualStyleBackColor = true;
@@ -773,7 +759,6 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.editUserGB);
             this.Controls.Add(this.newUserGB);
             this.Controls.Add(this.showActiveBT);
             this.Controls.Add(this.label19);
@@ -808,7 +793,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox adminOperationGB;
         private System.Windows.Forms.Button dataImportBT;
-        private System.Windows.Forms.Button dataExportBT;
         private System.Windows.Forms.Button deleteUserBT;
         private System.Windows.Forms.Button editUserBT;
         private System.Windows.Forms.Button addNewUserBT;

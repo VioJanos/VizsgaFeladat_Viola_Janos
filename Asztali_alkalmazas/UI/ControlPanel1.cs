@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using MySql.Data.MySqlClient;
 using WindowsFormsApp1;
 
-// Csóbor S. Erik csinálta
+// Csóbor S. Erik & Viola János csinálta
 namespace Asztali_alkalmazas.UI
 {
     public partial class ControlPanel1 : Form
@@ -47,6 +47,15 @@ namespace Asztali_alkalmazas.UI
         private string username;
         private string date;
         private string permission;
+        
+
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel5.Controls.Clear();
+            panel5.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
 
         //Ablak műveletek, színek változtatás.
         private void minBT_Click(object sender, EventArgs e)
@@ -130,11 +139,9 @@ namespace Asztali_alkalmazas.UI
         }
 
         private void userProfilBT_Click(object sender, EventArgs e)
-        {
-            //Load_PicSrc();
-            //userProfil_UC1.userProfilePic1.Image = new Bitmap(picSrc);
-            userProfil_UC1.Visible = true;
-            adminControl_UC1.Visible = false;
+        {            
+            UserProfil_UC up = new UserProfil_UC();
+            addUserControl(up);
         }
             //Beolvassa a kép elérési útját
         private void Load_PicSrc()
@@ -199,8 +206,7 @@ namespace Asztali_alkalmazas.UI
             //Főoldal és aktuális profil kép betöltése
         private void mainBT_Click(object sender, EventArgs e)
         {
-            userProfil_UC1.Visible = false;
-            adminControl_UC1.Visible = false;
+            panel5.Controls.Clear();
             try
             {
                 Load_PicSrc();
@@ -241,11 +247,10 @@ namespace Asztali_alkalmazas.UI
 
         private void adminBT_Click(object sender, EventArgs e)
         {
-            adminControl_UC1.Location = userProfil_UC1.Location;
-            adminControl_UC1.Visible = true;
-            userProfil_UC1.Visible = false;
+            AdminControl_UC ac = new AdminControl_UC();
+            addUserControl(ac);
         }
-            //Óra beállítása és indítása
+            
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime currentTime = DateTime.Now;
@@ -254,31 +259,51 @@ namespace Asztali_alkalmazas.UI
 
         private void BeerkezBT_Click(object sender, EventArgs e)
         {
+            panel5.Controls.Clear();
             frmVendor f1 = new frmVendor();
+            f1.TopLevel = false;
+            f1.AutoScroll = true;
+            panel5.Controls.Add(f1);
             f1.Show();
         }
 
         private void Btn_NewProd_Click(object sender, EventArgs e)
         {
+            panel5.Controls.Clear();
             frmNewProd f3 = new frmNewProd();
+            f3.TopLevel = false;
+            f3.AutoScroll = true;
+            panel5.Controls.Add(f3);
             f3.Show();
         }
 
         private void BtnInc_Click(object sender, EventArgs e)
         {
+            panel5.Controls.Clear();
             frmInc f2 = new frmInc();
+            f2.TopLevel = false;
+            f2.AutoScroll = true;
+            panel5.Controls.Add(f2);
             f2.Show();
         }
 
         private void BtnBook_Click(object sender, EventArgs e)
         {
+            panel5.Controls.Clear();
             frmBook f4 = new frmBook();
+            f4.TopLevel = false;
+            f4.AutoScroll = true;
+            panel5.Controls.Add(f4);
             f4.Show();
         }
 
         private void BtnSale_Click(object sender, EventArgs e)
         {
+            panel5.Controls.Clear();
             frmSales f5 = new frmSales();
+            f5.TopLevel = false;
+            f5.AutoScroll = true;
+            panel5.Controls.Add(f5);
             f5.Show();
         }
     }

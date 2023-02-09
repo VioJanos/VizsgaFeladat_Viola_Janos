@@ -73,10 +73,10 @@
             // ujJelszoOkLL
             // 
             this.ujJelszoOkLL.AutoSize = true;
-            this.ujJelszoOkLL.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ujJelszoOkLL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ujJelszoOkLL.Location = new System.Drawing.Point(412, 175);
             this.ujJelszoOkLL.Name = "ujJelszoOkLL";
-            this.ujJelszoOkLL.Size = new System.Drawing.Size(61, 19);
+            this.ujJelszoOkLL.Size = new System.Drawing.Size(51, 20);
             this.ujJelszoOkLL.TabIndex = 20;
             this.ujJelszoOkLL.Text = "label4";
             this.ujJelszoOkLL.Visible = false;
@@ -84,10 +84,10 @@
             // nemEggyezikLL
             // 
             this.nemEggyezikLL.AutoSize = true;
-            this.nemEggyezikLL.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nemEggyezikLL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nemEggyezikLL.Location = new System.Drawing.Point(412, 262);
             this.nemEggyezikLL.Name = "nemEggyezikLL";
-            this.nemEggyezikLL.Size = new System.Drawing.Size(61, 19);
+            this.nemEggyezikLL.Size = new System.Drawing.Size(51, 20);
             this.nemEggyezikLL.TabIndex = 18;
             this.nemEggyezikLL.Text = "label4";
             this.nemEggyezikLL.Visible = false;
@@ -95,10 +95,10 @@
             // rosszJelszoLL
             // 
             this.rosszJelszoLL.AutoSize = true;
-            this.rosszJelszoLL.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rosszJelszoLL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rosszJelszoLL.Location = new System.Drawing.Point(412, 101);
             this.rosszJelszoLL.Name = "rosszJelszoLL";
-            this.rosszJelszoLL.Size = new System.Drawing.Size(61, 19);
+            this.rosszJelszoLL.Size = new System.Drawing.Size(51, 20);
             this.rosszJelszoLL.TabIndex = 17;
             this.rosszJelszoLL.Text = "label4";
             this.rosszJelszoLL.Visible = false;
@@ -117,7 +117,7 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton2);
             this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Font = new System.Drawing.Font("Akashi_hun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(596, 262);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(322, 64);
@@ -130,7 +130,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(192, 24);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(61, 18);
+            this.radioButton2.Size = new System.Drawing.Size(56, 19);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.Text = "Törölt";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -140,7 +140,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(78, 24);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(56, 18);
+            this.radioButton1.Size = new System.Drawing.Size(49, 19);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.Text = "Aktív";
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -148,10 +148,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Akashi_hun", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(298, 341);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(175, 19);
+            this.checkBox1.Size = new System.Drawing.Size(153, 20);
             this.checkBox1.TabIndex = 19;
             this.checkBox1.Text = "Beállítom az új jelszót";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@
             // 
             // updateInfoBT
             // 
-            this.updateInfoBT.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateInfoBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateInfoBT.Location = new System.Drawing.Point(366, 412);
             this.updateInfoBT.Name = "updateInfoBT";
             this.updateInfoBT.Size = new System.Drawing.Size(229, 38);
@@ -206,7 +206,7 @@
             // 
             this.emailTB.Location = new System.Drawing.Point(54, 269);
             this.emailTB.Name = "emailTB";
-            this.emailTB.Size = new System.Drawing.Size(194, 31);
+            this.emailTB.Size = new System.Drawing.Size(304, 31);
             this.emailTB.TabIndex = 11;
             // 
             // kersztnevTB
@@ -226,20 +226,20 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(630, 153);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 19);
+            this.label7.Size = new System.Drawing.Size(58, 20);
             this.label7.TabIndex = 8;
             this.label7.Text = "Jelszó:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(630, 67);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 19);
+            this.label6.Size = new System.Drawing.Size(124, 20);
             this.label6.TabIndex = 7;
             this.label6.Text = "Felhasználónév:";
             // 
@@ -255,46 +255,46 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(258, 218);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(268, 25);
+            this.label8.Size = new System.Drawing.Size(235, 25);
             this.label8.TabIndex = 13;
             this.label8.Text = "Új jelszó megerősítése:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(252, 148);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 25);
+            this.label9.Size = new System.Drawing.Size(100, 25);
             this.label9.TabIndex = 12;
             this.label9.Text = "Új jelszó:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(252, 61);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 25);
+            this.label10.Size = new System.Drawing.Size(124, 25);
             this.label10.TabIndex = 11;
             this.label10.Text = "Régi jelszó:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(27, 341);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 19);
+            this.label5.Size = new System.Drawing.Size(103, 20);
             this.label5.TabIndex = 6;
             this.label5.Text = "Születési idő:";
             // 
             // passwordChangeBT
             // 
-            this.passwordChangeBT.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordChangeBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordChangeBT.Location = new System.Drawing.Point(53, 505);
             this.passwordChangeBT.Name = "passwordChangeBT";
             this.passwordChangeBT.Size = new System.Drawing.Size(229, 58);
@@ -306,27 +306,27 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(27, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 19);
+            this.label4.Size = new System.Drawing.Size(57, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "E-mail:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(27, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 19);
+            this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Keresztnév:";
             // 
             // updatePasswordBT
             // 
             this.updatePasswordBT.Enabled = false;
-            this.updatePasswordBT.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatePasswordBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatePasswordBT.Location = new System.Drawing.Point(366, 399);
             this.updatePasswordBT.Name = "updatePasswordBT";
             this.updatePasswordBT.Size = new System.Drawing.Size(229, 38);
@@ -351,7 +351,7 @@
             this.userProfileGB.Controls.Add(this.label4);
             this.userProfileGB.Controls.Add(this.label3);
             this.userProfileGB.Controls.Add(this.label2);
-            this.userProfileGB.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userProfileGB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userProfileGB.Location = new System.Drawing.Point(384, 624);
             this.userProfileGB.Name = "userProfileGB";
             this.userProfileGB.Size = new System.Drawing.Size(1084, 473);
@@ -362,10 +362,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Akashi_hun", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(27, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 19);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Vezetéknév:";
             // 
@@ -383,7 +383,7 @@
             this.passwordChangeGB.Controls.Add(this.label9);
             this.passwordChangeGB.Controls.Add(this.label10);
             this.passwordChangeGB.Controls.Add(this.updatePasswordBT);
-            this.passwordChangeGB.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordChangeGB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordChangeGB.Location = new System.Drawing.Point(316, 130);
             this.passwordChangeGB.Name = "passwordChangeGB";
             this.passwordChangeGB.Size = new System.Drawing.Size(1084, 473);
@@ -406,7 +406,7 @@
             // 
             // uploadImageBT
             // 
-            this.uploadImageBT.Font = new System.Drawing.Font("Akashi_hun", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadImageBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uploadImageBT.Location = new System.Drawing.Point(53, 352);
             this.uploadImageBT.Name = "uploadImageBT";
             this.uploadImageBT.Size = new System.Drawing.Size(229, 38);
@@ -418,10 +418,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Akashi_hun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(435, 31);
+            this.label1.Size = new System.Drawing.Size(367, 31);
             this.label1.TabIndex = 18;
             this.label1.Text = "Felhasználói fiók kezelése:";
             // 
@@ -438,6 +438,8 @@
             // UserProfil_UC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
             this.Controls.Add(this.userProfilePic1);
             this.Controls.Add(this.passwordChangeBT);
@@ -446,7 +448,7 @@
             this.Controls.Add(this.uploadImageBT);
             this.Controls.Add(this.label1);
             this.Name = "UserProfil_UC";
-            this.Size = new System.Drawing.Size(1454, 848);
+            this.Size = new System.Drawing.Size(1471, 1100);
             this.Load += new System.EventHandler(this.UserProfil_UC_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
